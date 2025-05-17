@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Browser extensions manager ui</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="global.css" />
+  </head>
+  <body>
+    <main class="main main-light main-dark">
+      <!-- Box input extensions -->
+      <div
+        class="box-input-extensions box-input-extensions-light box-input-extensions-dark"
+      >
+        <input
+          type="text"
+          class="input-extensions input-extensions-light input-extensions-dark"
+          id="input-extensions"
+          autocomplete="off"
+        />
+        <div class="container-extensions-search" id="suggestions" hidden></div>
+        <div class="extensions-theme">
+          <img
+            src="./assets/images/logo.svg"
+            alt="Logo extensions"
+            class="icon-extensions icon-extensions-light icon-extensions-dark"
+          />
+          <button
+            type="button"
+            class="btn-theme btn-theme-light btn-theme-dark"
+            id="btn-theme"
+            tabindex="0"
+          >
+            <img
+              src="./assets/images/icon-moon.svg"
+              alt="Icon Moon"
+              class="icon-theme icon-theme-light icon-theme-dark"
+            />
+          </button>
+        </div>
+      </div>
+
+      <!-- Box select Extensions list -->
+
+      <div class="box-select-extensions-list">
+        <h1
+          class="title-select-extensions-list title-select-extensions-list-light title-select-extensions-list-dark"
+        >
+          Extensions List
+        </h1>
+        <div class="container-btn-select-extensions-list">
+          <button
+            type="button"
+            class="btn-select-extensions-list btn-select-extensions-list-all btn-select-extensions-list-light btn-select-extensions-list-dark active"
+            id="btn-select-extensions-list-all"
+          >
+            All
+          </button>
+          <button
+            type="button"
+            class="btn-select-extensions-list btn-select-extensions-list-light btn-select-extensions-list-dark inactive"
+            id="btn-select-extensions-list-active"
+          >
+            Active
+          </button>
+          <button
+            type="button"
+            class="btn-select-extensions-list btn-select-extensions-list-light btn-select-extensions-list-dark inactive"
+            id="btn-select-extensions-list-inactive"
+          >
+            Inactive
+          </button>
+        </div>
+      </div>
+
+      <!-- Box extensions list -->
+      <div class="container-extensions-list">
+        <div
+          class="box-extensions-list box-extensions-list-light box-extensions-list-dark"
+        >
+          <div class="heading-box-extensions-list">
+            <div class="logo-container">
+              <img
+                src="./assets/images/logo-devlens.svg"
+                alt="Icon DevLens"
+                class="icon-box-extensions-list"
+              />
+            </div>
+            <div class="container-description">
+              <p class="heading-title heading-title-light heading-title-dark">
+                DevLens
+              </p>
+              <p
+                class="heading-paragrath heading-paragrath-light heading-paragrath-dark"
+              >
+                Quickly inspect page layouts and visualize element boundaries.
+              </p>
+            </div>
+          </div>
+          <div class="footer-box-extensions-list">
+            <button
+              type="button"
+              class="btn-remove btn-remove-light btn-remove-dark"
+            >
+              Remove
+            </button>
+            <label for="toggle-switch-DevLens" class="toggle-switch">
+              <input
+                type="checkbox"
+                name="inactive-active-input-DevLens"
+                class="input-checkbox input-checkbox-light"
+                id="toggle-switch-DevLens"
+                checked
+              />
+              <span tabindex="0" class="slider-light slider"></span>
+            </label>
+          </div>
+        </div>
+        <div
+          class="box-extensions-list box-extensions-list-light box-extensions-list-dark"
+        >
+          <div class="heading-box-extensions-list">
+            <div class="logo-container">
+              <img
+                src="./assets/images/logo-style-spy.svg"
+                alt="Icon StyleSpy"
+                class="icon-box-extensions-list"
+              />
+            </div>
+            <div class="container-description">
+              <p class="heading-title heading-title-light heading-title-dark">
+                StyleSpy
+              </p>
+              <p
+                class="heading-paragrath heading-paragrath-light heading--light heading-paragrath--light heading-dark"
+              >
+                Instaly analyze and copy CSS from any webpage element.
+              </p>
+            </div>
+          </div>
+          <div class="footer-box-extensions-list">
+            <button
+              type="button"
+              class="btn-remove btn-remove-light btn-remove-dark"
+            >
+              Remove
+            </button>
+            <label for="toggle-switch-StyleSpy" class="toggle-switch">
+              <input
+                type="checkbox"
+                name="inactive-active-input-StyleSpy"
+                class="input-checkbox input-checkbox-light"
+                id="toggle-switch-StyleSpy"
+                checked
+              />
+              <span tabindex="0" class="slider-light slider"></span>
+            </label>
+          </div>
+        </div>
+        <div
+          class="box-extensions-list box-extensions-list-light box-extensions-list-dark"
+        >
+          <div class="heading-box-extensions-list">
+            <div class="logo-container">
+              <img
+                src="./assets/images/logo-speed-boost.svg"
+                alt="Icon SpeedBoost"
+                class="icon-box-extensions-list"
+              />
+            </div>
+            <div class="container-description">
+              <p class="heading-title heading-title-light heading-title-dark">
+                SpeedBoost
+              </p>
+              <p
+                class="heading-paragrath heading-paragrath-light heading-paragrath-dark"
+              >
+                Optimizes browser resource usage to accelerate page loading.
+              </p>
+            </div>
+          </div>
+          <div class="footer-box-extensions-list">
+            <button
+              type="button"
+              class="btn-remove btn-remove-light btn-remove-dark"
+            >
+              Remove
+            </button>
+            <label for="toggle-switch-SpeedBost" class="toggle-switch">
+              <input
+                type="checkbox"
+                name="inactive-active-input-SpeedBost"
+                class="input-range input-range-light"
+                id="toggle-switch-SpeedBost"
+              />
+              <span tabindex="0" class="slider-light slider"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
